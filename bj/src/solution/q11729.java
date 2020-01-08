@@ -13,7 +13,7 @@ public class q11729 {
 		hanoi(num-1,by,from,to);
 	}
 
-	public static void main(String args[]){
+	public void main(String args[]){
 	    int num;
 	    Scanner sc = new Scanner(System.in);
 	    num=sc.nextInt();
