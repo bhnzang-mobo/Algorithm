@@ -1,0 +1,8 @@
+{
+    "files.associations": {
+        "io.h": "c",
+        "stdlib.h": "c",
+        "corecrt_io.h": "c"
+    },
+    "code-runner.runInTerminal": true
+}
