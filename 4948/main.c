@@ -27,7 +27,6 @@ int howmany(int a){
     }
     return ret;
 }
-
 int main(){
     primeinit();
     int ret;
