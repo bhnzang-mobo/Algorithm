@@ -1,7 +1,10 @@
 #ifndef __D_Linked_List__
 #define __D_Linked_List__
 //strutcture
-typedef int DData;
+typedef struct DData{
+	int data;
+	int weight;
+}DData;
 
 typedef struct DNode{
 	DData data;

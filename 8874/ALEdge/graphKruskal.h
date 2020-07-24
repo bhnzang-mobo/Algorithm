@@ -19,13 +19,16 @@ typedef struct __graph{
 }ALGraph;
 
 void GraphInit(ALGraph*,int);
-void AddEdge(ALGraph*,int,int,int);
+void AddEdge1(ALGraph*,int,int,int);
+void AddEdge2(ALGraph*,int,int,int);
 void ShowGraphInfo(ALGraph*);
 void FreeGraph(ALGraph*);
 
-void ConKruskal(ALGraph* al);
+void ConKruskal(ALGraph* al,int V);
 void ShowGraphEdgeWeightInfo(ALGraph * al);
 void BFS(ALGraph*,int);
 void DFS(ALGraph*,int);
 
+int haveVisited(int list [], int k);
+void VisitVert(ALGraph* al, int visit);
 #endif 
