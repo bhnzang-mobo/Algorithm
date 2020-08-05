@@ -5,7 +5,7 @@ int memo[100001][101];
 int N,K;
 
 
-int big(int K,int m){
+int big(int K,int m){//이게 시간복잡도 오지게잡아먹음 거의 n^3?
     int max = 0;
     int idx=-1;
     for(int i = 0 ; i < N; i ++){//가져올 수 있는 K무게의 물건들 중 최대값
