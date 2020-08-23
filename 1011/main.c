@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <math.h>
 /* recursive한 방법 설계 자체는 올바르게 작동하지만 문제의 의도는 규칙성을 찾고 계산하는 것.
 int ret;
 int root(int distance, int from, int to){
@@ -35,31 +36,27 @@ int root(int distance, int from, int to){
     }
 }*/
  
+int cal(unsigned long int dis){
+    unsigned long int tmp = (unsigned long int)sqrt(dis);//데이터타입 설정 바로 못하면  0 ,2^31에서 오류남
+    if(dis == tmp*tmp){
+        return 2*tmp-1;
+    }
+    else if(tmp*tmp < dis && dis <=(2*tmp*tmp + 2*tmp + 1)/2){
+        return 2*tmp;
+    }
+    else{
+        return 2*tmp+1;
+    }
+}
+
 int main(void)
 {
-    int test_case;
- 
-    scanf("%d",&test_case);
-    for(int i = 0 ; i <test_case ; i++){
+    int T;
+    scanf("%d",&T);
+    for(int i = 0 ; i < T ; i ++){
         int x,y;
- 
         scanf("%d %d",&x,&y);
- 
-        int distance  = y-x;
- 
-        int i = 2;
-        while(i*i-(i-1) > distance || i*i+i < distance){    
-            i++;
-        }
- 
-        if(i*i < distance){
-            printf("%d\n",2*i);
-        }else{
-            printf("%d\n",2*i-1);
-    
-        }
+        printf("%d\n",cal(y-x));
     }
- 
-    
     return 0;
 }

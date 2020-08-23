@@ -1,0 +1,31 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "type": "shell",
+            "label": "Build",
+            "command": "C:\\MinGW\\bin\\gcc.exe",
+          "args": [
+            "-D__USE_MINGW_ANSI_STDIO",
+            "-Wl,--stack,16777216", //32MB for 33554432
+            "-g",
+            "${fileDirname}\\*.c",
+            "-o",
+            "${fileDirname}\\test.exe"
+          ],
+            "options": {
+                "cwd": "C:\\MinGW\\bin"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": "build"
+        },
+        {
+            "type": "shell",
+            "label": "Test Execute",
+            "command": "test.exe",
+            "group": "test"
+        }
+    ]
+}
