@@ -19,7 +19,7 @@
                 "$gcc"
             ],
             "group": "build"
-        }{
+        },{
             "type": "shell",
             "label": "Build/CPP",
             "command": "C:\\MinGW\\bin\\g++.exe",
