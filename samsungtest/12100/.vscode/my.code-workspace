@@ -1,0 +1,27 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		}
+	],
+	"settings": {
+		"files.associations": {
+			"array": "c",
+			"*.tcc": "c",
+			"deque": "c",
+			"string": "c",
+			"unordered_map": "c",
+			"vector": "c",
+			"functional": "c",
+			"iterator": "c",
+			"memory_resource": "c",
+			"fstream": "c",
+			"istream": "c",
+			"ostream": "c",
+			"sstream": "c",
+			"streambuf": "c",
+			"tuple": "c",
+			"utility": "c"
+		}
+	}
+}
