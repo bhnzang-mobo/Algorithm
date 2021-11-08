@@ -30,12 +30,16 @@ class Solution {
         return answer;
        
     }
+    
+    public void isMatch(String inp) {
+    	System.out.println(inp.matches("\\w+@\\w+(\\.\\w+)+"));
+    }
 }
 
 public class Main {
 	public static void main(String args[]) {
 		Solution test = new Solution();
-		test.solution("(|)f0923..jisd-f_.");
+		test.isMatch("bhnzang9608@g.skku.edu");
 	}
 	
 }
