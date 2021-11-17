@@ -1,10 +1,16 @@
 {
+    "version": "2.0.0",
+    "runner": "terminal",
+    "type": "shell",
+    "echoCommand": true,
+    "presentation" : { "reveal": "always" },
     "tasks": [
-        {
+          //C++ 컴파일
+          {
             "label": "save and compile for C++",
             "command": "g++",
             "args": [
-                "${file}",
+                "${fileDirname}\\*.cpp",
                 "-o",
                 "${fileDirname}/${fileBasenameNoExtension}"
             ],
@@ -30,11 +36,12 @@
                 }
             }
         },
+        //C 컴파일
         {
             "label": "save and compile for C",
             "command": "gcc",
             "args": [
-                "${file}",
+                "${fileDirname}\\*.c",
                 "-o",
                 "${fileDirname}/${fileBasenameNoExtension}"
             ],
@@ -60,6 +67,13 @@
                 }
             }
         },
+        // 바이너리 실행(Ubuntu)
+        // {
+        //     "label": "execute",
+        //     "command": "${fileDirname}/${fileBasenameNoExtension}",
+        //     "group": "test"
+        // }
+        // 바이너리 실행(Windows)
         {
             "label": "execute",
             "command": "cmd",
@@ -69,6 +83,5 @@
             ]
     
         }
-    ],
-    "version": "2.0.0"
+    ]
 }
