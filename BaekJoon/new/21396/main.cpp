@@ -46,7 +46,6 @@ long long int count(){
 
 int main( int argc, char * argv[] )
 {
-    freopen("input.txt","r",stdin);
     int T;
     scanf("%d",&T);
     for(int i = 0 ; i < T ; i ++){
