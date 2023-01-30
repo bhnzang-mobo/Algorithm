@@ -469,4 +469,5 @@ FodyWeavers.xsd
 ### VisualStudio Patch ###
 # Additional files built by Visual Studio
 SKKU_DataStructure_Exercises/
-# End of https://www.toptal.com/developers/gitignore/api/visualstudio
+#End of https://www.toptal.com/developers/gitignore/api/visualstudio
+*.exe
