@@ -3,6 +3,21 @@
     "tasks": [
         {
             "type": "shell",
+            "label": "gcc.exe build active file_one file",
+            "command": "gcc",
+            "args": [
+                "-g",
+                "${fileDirname}/${fileBasenameNoExtension}.c",
+                "-o",
+                "${fileDirname}/${fileBasenameNoExtension}.exe"
+            ],
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": "build"
+        },
+        {
+            "type": "shell",
             "label": "gcc.exe build active file",
             "command": "gcc",
             "args": [
